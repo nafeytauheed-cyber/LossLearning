@@ -1,5 +1,8 @@
 # LossLearning
 
+This project is made out of curiosity and mathematical intuition, Not a breakthrough or a PS solution. Just a curious student trying to make a flexible Loss function and going deeper into the math behind it.
+
+
 **Local Gradient-Influence Guided Adaptive Robust Learning**
 
 A PyTorch classification framework that adapts generalized cross-entropy using
