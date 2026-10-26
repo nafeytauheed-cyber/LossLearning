@@ -1,0 +1,102 @@
+{
+  "dataset": "disconnected",
+  "noise_rate": 0,
+  "seed": 22,
+  "method": "ce_matched",
+  "noise_mode": "symmetric",
+  "realized_noise": 0.0,
+  "runtime_seconds": 0.41642945600005987,
+  "parameters": 2898,
+  "noise_auc": null,
+  "confidence_noise_auc": null,
+  "mean_q": 0.0,
+  "clean_q": 0.0,
+  "hard_clean_q": 0.0,
+  "corrupted_q": null,
+  "fallback_fraction": 1.0,
+  "accuracy": 0.988,
+  "balanced_accuracy": 0.988,
+  "macro_f1": 0.9879982717511322,
+  "recall": [
+    0.976,
+    1.0
+  ],
+  "worst_class_recall": 0.976,
+  "confusion_matrix": [
+    [
+      122,
+      3
+    ],
+    [
+      0,
+      125
+    ]
+  ],
+  "estimator": {
+    "adaptive_loss": false,
+    "batch_size": 128,
+    "device": "auto",
+    "embedding_dim": 32,
+    "encoder": "mlp",
+    "epochs": 40,
+    "freeze_encoder": false,
+    "head": "linear",
+    "hidden_dim": 80,
+    "learning_rate": 0.003,
+    "n_prototypes": 16,
+    "random_state": 22,
+    "standardize": true,
+    "trainer_options": {
+      "warmup": 8,
+      "bank_size": 256
+    }
+  },
+  "trainer": {
+    "epochs": 40,
+    "lr": 0.003,
+    "weight_decay": 0.0001,
+    "warmup": 8,
+    "ramp_epochs": 8,
+    "adaptive": false,
+    "loss": "ce",
+    "fixed_q": 0.7,
+    "focal_gamma": 2.0,
+    "q_max": 0.8,
+    "tau": 0.1,
+    "delta": 0.15,
+    "width": 0.4,
+    "rho": 0.8,
+    "class_aware": true,
+    "threshold_mode": "count",
+    "teacher_beta": 0.98,
+    "confidence": 0.7,
+    "stability": 0.6,
+    "stability_filter": true,
+    "bank_size": 256,
+    "refresh_epochs": 2,
+    "neighbors": 12,
+    "min_neighbors": 3,
+    "temperature": 0.15,
+    "reference_mode": "exact",
+    "entropy": true,
+    "gradient": true,
+    "confidence_only": false,
+    "consistency": 0.0,
+    "regularization": 0.0,
+    "clip_grad": 5.0,
+    "seed": 22,
+    "history_snapshots": 40
+  },
+  "torch_version": "2.14.1+cpu",
+  "python": "3.12.14",
+  "device": "cpu",
+  "optimizer": "AdamW",
+  "scheduler": null,
+  "git_commit": null,
+  "split_sizes": {
+    "y_train": 600,
+    "y_val": 150,
+    "y_test": 250
+  },
+  "peak_memory_bytes": null
+}

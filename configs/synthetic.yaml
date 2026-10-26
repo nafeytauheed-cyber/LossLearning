@@ -1,0 +1,38 @@
+output: results/runs
+threads: 1
+n_samples: 1000
+seeds:
+- 11
+- 22
+- 33
+datasets:
+- moons
+- circles
+- blobs
+- overlap
+- disconnected
+- rare
+noise_rates:
+- 0
+- 0.1
+- 0.2
+- 0.4
+methods:
+- ce
+- focal
+- gce
+- potential_ce
+- adaptive
+- full
+- ce_matched
+model:
+  epochs: 40
+  batch_size: 128
+  embedding_dim: 32
+  hidden_dim: 64
+  n_prototypes: 16
+trainer_options:
+  warmup: 8
+  bank_size: 256
+figures: false
+save_checkpoints: false

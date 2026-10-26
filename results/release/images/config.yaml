@@ -1,0 +1,28 @@
+dataset: fashion_mnist
+output: results/runs
+threads: 1
+seeds:
+- 42
+noise_rates:
+- 0.2
+methods:
+- ce
+- gce
+- adaptive
+- full
+train_limit: 2000
+test_limit: 1000
+validation_limit: 1000
+download: true
+model:
+  epochs: 10
+  batch_size: 128
+  embedding_dim: 32
+  n_prototypes: 16
+  device: auto
+trainer_options:
+  warmup: 3
+  bank_size: 128
+  confidence: 0.5
+  refresh_epochs: 2
+save_checkpoints: false

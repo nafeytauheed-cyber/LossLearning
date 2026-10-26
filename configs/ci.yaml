@@ -1,0 +1,15 @@
+datasets: [moons]
+noise_rates: [0.2]
+seeds: [42]
+methods: [ce, full]
+n_samples: 100
+threads: 1
+model:
+  epochs: 3
+  batch_size: 32
+trainer_options:
+  warmup: 1
+  confidence: 0.5
+  stability_filter: false
+  bank_size: 32
+figures: false

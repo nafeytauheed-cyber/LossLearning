@@ -1,0 +1,23 @@
+output: results/runs
+threads: 1
+n_samples: 1000
+seeds:
+- 42
+datasets:
+- moons
+noise_rates:
+- 0.2
+methods:
+- ce
+- full
+model:
+  epochs: 40
+  batch_size: 128
+  embedding_dim: 32
+  hidden_dim: 64
+  n_prototypes: 16
+trainer_options:
+  warmup: 8
+  bank_size: 256
+figures: true
+save_checkpoints: false

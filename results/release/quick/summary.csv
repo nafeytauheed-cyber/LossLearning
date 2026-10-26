@@ -1,0 +1,3 @@
+dataset,noise_rate,seed,method,noise_mode,realized_noise,runtime_seconds,parameters,noise_auc,confidence_noise_auc,mean_q,clean_q,hard_clean_q,corrupted_q,fallback_fraction,accuracy,balanced_accuracy,macro_f1,recall,worst_class_recall,confusion_matrix
+moons,0.2,42,ce,symmetric,0.21,0.4631132560000424,2338,0.5,0.9656754403589847,0.0,0.0,0.0,0.0,1.0,0.944,0.944,0.9439102564102564,"[0.984, 0.904]",0.904,"[[123, 2], [12, 113]]"
+moons,0.2,42,full,symmetric,0.21,1.1258862370000315,2914,0.9548422744625277,0.9622932154577724,0.1709727793931961,0.03007611259818077,0.15006399154663086,0.7010127305984497,0.0,0.976,0.976,0.9759984639016897,"[0.968, 0.984]",0.968,"[[121, 4], [2, 123]]"
